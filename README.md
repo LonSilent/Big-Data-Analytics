@@ -3,9 +3,9 @@
 
 ### Install Jupyter notebook
 ```
-sudo apt-get updatesudo 
-apt-get install python-pip python-dev build-essentialsudo 
-pip install --upgrade pipsudo 
-pip install “ipython[notebook]”
+sudo apt-get update
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install --upgrade pip
+sudo pip install “ipython[notebook]”
 jupyter notebook
 ```
