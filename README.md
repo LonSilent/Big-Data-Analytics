@@ -1,6 +1,12 @@
 # Big-Data-Analytics
+### IPython Notebook with saprk install 
 
-
+### Install Anaconda (iPython)
+```
+wget http://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh
+bash Anaconda2-4.0.0-Linux-x86_64.sh
+conda install jupyter
+```
 ### Install Jupyter notebook
 ```
 sudo apt-get update
@@ -9,7 +15,17 @@ sudo pip install --upgrade pip
 sudo pip install “ipython[notebook]”
 jupyter notebook
 ```
-### pyspark
+
+### link Spark
+```
+sudo vim ~/.bashric
+export PYSPARK_DRIVER_PYTHON=ipython
+export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
+esc :wq Enter
+source ~/.bashrc
+pyspark
+```
+### pyspark csv
 ```
 pyspark --packages com.databricks:spark-csv_2.10:1.4.0
 ```
