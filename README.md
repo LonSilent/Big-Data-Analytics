@@ -1,5 +1,5 @@
 # Big-Data-Analytics
-### IPython Notebook with saprk install 
+### IPython Notebook with spark install 
 
 ### Install Anaconda (iPython)
 ```
@@ -21,7 +21,6 @@ jupyter notebook
 sudo vim ~/.bashric
 export PYSPARK_DRIVER_PYTHON=ipython
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
-esc :wq Enter
 source ~/.bashrc
 pyspark
 ```
