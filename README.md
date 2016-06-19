@@ -1,5 +1,5 @@
 # Big-Data-Analytics
-### IPython Notebook with spark install 
+## IPython Notebook with spark install 
 
 ### Install Anaconda (iPython)
 ```
@@ -15,7 +15,6 @@ sudo pip install --upgrade pip
 sudo pip install “ipython[notebook]”
 jupyter notebook
 ```
-
 ### link Spark
 ```
 sudo vim ~/.bashric
@@ -28,3 +27,14 @@ pyspark
 ```
 pyspark --packages com.databricks:spark-csv_2.10:1.4.0
 ```
+
+## link with AWS
+### login cluster
+```
+ec2/spark-ec2 -k bigdata -i bigdata.pem -r us-west-2 login cluster
+```
+### run pyspark with AWS
+```
+./bin/pyspark --master spark://ec2-52-40-241-52.us-west-2.compute.amazonaws.com:7077
+```
+### Notice! You should export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in your shell, and bigdata.pem is necessary, please PM me if you want.
